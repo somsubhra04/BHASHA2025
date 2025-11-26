@@ -1,0 +1,80 @@
+nohup: ignoring input
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading base model in 4-bit quantized mode...
+
+Loading checkpoint shards:   0%|          | 0/10 [00:00<?, ?it/s]
+Loading checkpoint shards:  10%|█         | 1/10 [00:04<00:41,  4.60s/it]
+Loading checkpoint shards:  20%|██        | 2/10 [00:10<00:42,  5.35s/it]
+Loading checkpoint shards:  30%|███       | 3/10 [00:16<00:39,  5.65s/it]
+Loading checkpoint shards:  40%|████      | 4/10 [00:22<00:35,  5.83s/it]
+Loading checkpoint shards:  50%|█████     | 5/10 [00:27<00:28,  5.64s/it]
+Loading checkpoint shards:  60%|██████    | 6/10 [00:33<00:22,  5.72s/it]
+Loading checkpoint shards:  70%|███████   | 7/10 [00:39<00:17,  5.77s/it]
+Loading checkpoint shards:  80%|████████  | 8/10 [00:46<00:12,  6.02s/it]
+Loading checkpoint shards:  90%|█████████ | 9/10 [00:51<00:05,  5.81s/it]
+Loading checkpoint shards: 100%|██████████| 10/10 [00:54<00:00,  4.90s/it]
+Loading checkpoint shards: 100%|██████████| 10/10 [00:54<00:00,  5.44s/it]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+/home/pguha3/code/BHASA/training.py:168: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 2}.
+Attaching LoRA adapters...
+Trainable params: 560 / Total params: 923
+
+  0%|          | 0/8900 [00:00<?, ?it/s]You're using a LlamaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+
+  0%|          | 1/8900 [00:16<39:54:49, 16.15s/it]
+  0%|          | 2/8900 [00:24<28:59:54, 11.73s/it]
+  0%|          | 3/8900 [00:33<25:23:52, 10.28s/it]
+  0%|          | 4/8900 [00:42<24:23:49,  9.87s/it]
+  0%|          | 5/8900 [00:50<22:53:32,  9.27s/it]
+  0%|          | 6/8900 [00:58<21:54:29,  8.87s/it]
+  0%|          | 7/8900 [01:09<23:01:33,  9.32s/it]
+  0%|          | 8/8900 [01:18<23:21:52,  9.46s/it]
+  0%|          | 9/8900 [01:27<22:19:49,  9.04s/it]
+  0%|          | 10/8900 [01:35<21:34:40,  8.74s/it]
+  0%|          | 11/8900 [01:43<21:03:19,  8.53s/it]
+  0%|          | 12/8900 [01:51<20:44:22,  8.40s/it]
+  0%|          | 13/8900 [01:59<20:32:12,  8.32s/it]
+  0%|          | 14/8900 [02:07<20:19:53,  8.24s/it]
+  0%|          | 15/8900 [02:15<20:12:56,  8.19s/it]
+  0%|          | 16/8900 [02:23<20:09:05,  8.17s/it]
+  0%|          | 17/8900 [02:31<20:19:22,  8.24s/it]
+  0%|          | 18/8900 [02:41<21:02:49,  8.53s/it]
+  0%|          | 19/8900 [02:49<20:48:54,  8.44s/it]
+  0%|          | 20/8900 [02:57<20:43:47,  8.40s/it]
+  0%|          | 21/8900 [03:05<20:35:41,  8.35s/it]
+  0%|          | 22/8900 [03:14<20:29:16,  8.31s/it]
+  0%|          | 23/8900 [03:22<20:27:12,  8.29s/it]
+  0%|          | 24/8900 [03:30<20:22:58,  8.27s/it]
+  0%|          | 25/8900 [03:38<20:19:48,  8.25s/it]
+  0%|          | 26/8900 [03:47<20:16:47,  8.23s/it]
+  0%|          | 27/8900 [03:55<20:35:39,  8.36s/it]
+  0%|          | 28/8900 [04:04<21:10:38,  8.59s/it]
+  0%|          | 29/8900 [04:12<20:16:12,  8.23s/it]
+  0%|          | 30/8900 [04:19<19:20:36,  7.85s/it]
+  0%|          | 31/8900 [04:26<18:41:15,  7.59s/it]
+  0%|          | 32/8900 [04:33<18:12:58,  7.39s/it]
+  0%|          | 33/8900 [04:40<17:54:10,  7.27s/it]
+  0%|          | 34/8900 [04:47<17:40:42,  7.18s/it]
+  0%|          | 35/8900 [04:54<17:31:31,  7.12s/it]
+  0%|          | 36/8900 [05:01<17:28:31,  7.10s/it]
+  0%|          | 37/8900 [05:08<17:22:50,  7.06s/it]
+  0%|          | 38/8900 [05:16<18:17:46,  7.43s/it]
+  0%|          | 39/8900 [05:23<17:57:35,  7.30s/it]
+  0%|          | 40/8900 [05:30<17:43:20,  7.20s/it]
+  0%|          | 41/8900 [05:37<17:33:39,  7.14s/it]
+  0%|          | 42/8900 [05:44<17:19:44,  7.04s/it]
+  0%|          | 43/8900 [05:50<17:07:06,  6.96s/it]
+  0%|          | 44/8900 [05:57<16:58:01,  6.90s/it]
+  1%|          | 45/8900 [06:04<17:07:01,  6.96s/it]
+  1%|          | 46/8900 [06:11<17:08:46,  6.97s/it]
+  1%|          | 47/8900 [06:18<17:10:36,  6.98s/it]
+  1%|          | 48/8900 [06:25<17:12:08,  7.00s/it]
+  1%|          | 49/8900 [06:32<17:12:31,  7.00s/it]
+  1%|          | 50/8900 [06:39<17:12:43,  7.00s/it]
+                                                    
+
+  1%|          | 50/8900 [06:39<17:12:43,  7.00s/it]
+  1%|          | 51/8900 [06:46<17:12:43,  7.00s/it]
+  1%|          | 52/8900 [06:54<17:34:00,  7.15s/it]
